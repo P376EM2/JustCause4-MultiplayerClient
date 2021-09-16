@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5374880B-BF7D-887C-48F9-9E7CB401947C}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>fw1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\fw1\</IntDir>
+    <TargetName>fw1</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\fw1\</IntDir>
+    <TargetName>fw1</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;WIN32_LEAN_AND_MEAN;DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\deps\fw1\CFW1ColorRGBA.h" />
+    <ClInclude Include="..\deps\fw1\CFW1DWriteRenderTarget.h" />
+    <ClInclude Include="..\deps\fw1\CFW1Factory.h" />
+    <ClInclude Include="..\deps\fw1\CFW1FontWrapper.h" />
+    <ClInclude Include="..\deps\fw1\CFW1GlyphAtlas.h" />
+    <ClInclude Include="..\deps\fw1\CFW1GlyphProvider.h" />
+    <ClInclude Include="..\deps\fw1\CFW1GlyphRenderStates.h" />
+    <ClInclude Include="..\deps\fw1\CFW1GlyphSheet.h" />
+    <ClInclude Include="..\deps\fw1\CFW1GlyphVertexDrawer.h" />
+    <ClInclude Include="..\deps\fw1\CFW1Object.h" />
+    <ClInclude Include="..\deps\fw1\CFW1StateSaver.h" />
+    <ClInclude Include="..\deps\fw1\CFW1TextGeometry.h" />
+    <ClInclude Include="..\deps\fw1\CFW1TextRenderer.h" />
+    <ClInclude Include="..\deps\fw1\FW1CompileSettings.h" />
+    <ClInclude Include="..\deps\fw1\FW1FontWrapper.h" />
+    <ClInclude Include="..\deps\fw1\FW1Precompiled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\deps\fw1\CFW1ColorRGBA.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1ColorRGBAInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1DWriteRenderTarget.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1DWriteRenderTargetInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1Factory.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1FactoryInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1FontWrapper.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1FontWrapperInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphAtlas.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphAtlasInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphProvider.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphProviderInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphRenderStates.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphRenderStatesInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphSheet.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphSheetInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphVertexDrawer.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1GlyphVertexDrawerInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1StateSaver.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1TextGeometry.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1TextGeometryInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1TextRenderer.cpp" />
+    <ClCompile Include="..\deps\fw1\CFW1TextRendererInterface.cpp" />
+    <ClCompile Include="..\deps\fw1\FW1FontWrapper.cpp" />
+    <ClCompile Include="..\deps\fw1\FW1Precompiled.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

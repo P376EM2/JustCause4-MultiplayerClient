@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Clock.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Patches.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="xinput9_1_0.h" />
+    <ClInclude Include="dllmain.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVariables.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkIncludes.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkSettings.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="InGameChat.h">
+      <Filter>Modules\InGameChat</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugRenderer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkManager.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Offsets.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Patches.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="NetworkSettings.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="InGameChat.cpp">
+      <Filter>Modules\InGameChat</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Inputs</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkManager.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{71329e4a-d7eb-4add-9f2f-c12bf93a2eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{0887a7c1-c1a5-4512-bf46-24700f73cfb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{42698c63-c3ac-4d93-8813-7c787759bba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{3c609d23-bfc0-4b20-ac81-4baaa866287c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inputs">
+      <UniqueIdentifier>{bb248bb8-a463-4916-a400-41b70f481016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{40f6a1b0-2286-4d04-84ff-fd7c46cb506f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\InGameChat">
+      <UniqueIdentifier>{222f3728-fa52-4e41-ac72-20a0e15c9a37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xinput9_1_0.def" />
+  </ItemGroup>
+</Project>

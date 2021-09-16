@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{8CAD9F58-7810-2FFD-2196-67B30DD8FA7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\zycore">
+      <UniqueIdentifier>{F7C1E787-6323-C595-EC90-0B4858F1FB54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\zycore\include">
+      <UniqueIdentifier>{6AF0B6AE-D6FD-E494-5FE4-E07FCBF0B04B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\zycore\include\Zycore">
+      <UniqueIdentifier>{F54A72CD-E186-7537-4A99-8D2E36F41D52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\zycore\include\Zycore\API">
+      <UniqueIdentifier>{5EA2F382-4AF4-CA72-3313-08831F04E45B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\zycore\src">
+      <UniqueIdentifier>{8EA371D9-FADA-B970-03E5-1D946F9BE069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\zycore\src\API">
+      <UniqueIdentifier>{779FAFB9-E3AC-DD9F-6C93-D98AD89FA956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Zydis">
+      <UniqueIdentifier>{6B966BA4-D756-E7DA-A091-30580C112CB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Zydis\Generated">
+      <UniqueIdentifier>{C908F1BF-3540-3957-3E4A-9D7AAA006050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Zydis\Internal">
+      <UniqueIdentifier>{F7045E99-E3FE-86EB-CC6B-1DFCB804ED57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Generated">
+      <UniqueIdentifier>{0B78B8BD-7738-34F4-4073-7D71ACF278D0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\API\Memory.h">
+      <Filter>dependencies\zycore\include\Zycore\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\API\Synchronization.h">
+      <Filter>dependencies\zycore\include\Zycore\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\API\Terminal.h">
+      <Filter>dependencies\zycore\include\Zycore\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\API\Thread.h">
+      <Filter>dependencies\zycore\include\Zycore\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Allocator.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Bitset.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Comparison.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Defines.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Format.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\LibC.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\List.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Object.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Status.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\String.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Types.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Vector.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\include\Zycore\Zycore.h">
+      <Filter>dependencies\zycore\include\Zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Decoder.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\DecoderTypes.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Formatter.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\FormatterBuffer.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Generated\EnumISAExt.h">
+      <Filter>include\Zydis\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Generated\EnumISASet.h">
+      <Filter>include\Zydis\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Generated\EnumInstructionCategory.h">
+      <Filter>include\Zydis\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Generated\EnumMnemonic.h">
+      <Filter>include\Zydis\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Generated\EnumRegister.h">
+      <Filter>include\Zydis\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Internal\DecoderData.h">
+      <Filter>include\Zydis\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Internal\FormatterATT.h">
+      <Filter>include\Zydis\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Internal\FormatterBase.h">
+      <Filter>include\Zydis\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Internal\FormatterIntel.h">
+      <Filter>include\Zydis\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Internal\SharedData.h">
+      <Filter>include\Zydis\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Internal\String.h">
+      <Filter>include\Zydis\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\MetaInfo.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Mnemonic.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Register.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\SharedTypes.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\ShortString.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Status.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Utils.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\meow-hook\third_party\zydis\include\Zydis\Zydis.h">
+      <Filter>include\Zydis</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\API\Memory.c">
+      <Filter>dependencies\zycore\src\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\API\Synchronization.c">
+      <Filter>dependencies\zycore\src\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\API\Terminal.c">
+      <Filter>dependencies\zycore\src\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\API\Thread.c">
+      <Filter>dependencies\zycore\src\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\Allocator.c">
+      <Filter>dependencies\zycore\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\Bitset.c">
+      <Filter>dependencies\zycore\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\Format.c">
+      <Filter>dependencies\zycore\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\List.c">
+      <Filter>dependencies\zycore\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\String.c">
+      <Filter>dependencies\zycore\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\Vector.c">
+      <Filter>dependencies\zycore\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\dependencies\zycore\src\Zycore.c">
+      <Filter>dependencies\zycore\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\Decoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\DecoderData.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\Formatter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\FormatterATT.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\FormatterBase.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\FormatterBuffer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\FormatterIntel.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\MetaInfo.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\Mnemonic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\Register.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\SharedData.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\String.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\Utils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\meow-hook\third_party\zydis\src\Zydis.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\AccessedFlags.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\DecoderTables.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\EncodableInstructions.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\EnumISAExt.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\EnumISASet.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\EnumInstructionCategory.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\EnumMnemonic.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\EnumRegister.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\FormatterStrings.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\InstructionDefinitions.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\InstructionEncodings.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+    <None Include="..\deps\meow-hook\third_party\zydis\src\Generated\OperandDefinitions.inc">
+      <Filter>src\Generated</Filter>
+    </None>
+  </ItemGroup>
+</Project>

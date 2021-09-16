@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{858CAAC2-F141-23B8-7A36-1D8FE6EA19BC}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xinput9_1_0</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\xinput9_1_0\</IntDir>
+    <TargetName>xinput9_1_0</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\xinput9_1_0\</IntDir>
+    <TargetName>xinput9_1_0</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;WIN32_LEAN_AND_MEAN;_DEBUG;DEBUG;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)deps\nakamaSDK\include;..\deps\fw1;..\deps\meow-hook\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>Debug\xinput9_1_0.lib</ImportLibrary>
+      <ModuleDefinitionFile>./xinput9_1_0.def</ModuleDefinitionFile>
+      <AdditionalOptions>/DEF:"./xinput9_1_0.def" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(SolutionDir)deps\nakamaSDK\shared-libs\win64\v142\$(Configuration);$(SolutionDir)DependantProjects/Debug;$(SolutionDir)deps\nakamaSDK\libs\win64\v142\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>asmjit.lib;cpprestd.lib;libprotobufd.lib;nakama-cppd.lib;ssld.lib;cryptod.lib;Crypt32.lib;fw1.lib;zydis.lib;meow-hook.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Bcrypt.lib;caresd.lib;gprd.lib;grpc++d.lib;grpcd.lib;zlibd.lib;Winhttp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(TargetDir)$(ProjectName).dll" G:/SteamLibrary2/steamapps/common/Just Cause 4/$(ProjectName).dll"
+Exit 0</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;WIN32_LEAN_AND_MEAN;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;..\deps\fw1;..\deps\meow-hook\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>Release\xinput9_1_0.lib</ImportLibrary>
+      <ModuleDefinitionFile>./xinput9_1_0.def</ModuleDefinitionFile>
+      <AdditionalOptions>/DEF:"./xinput9_1_0.def" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(TargetDir)$(ProjectName).dll" "G:\SteamLibrary2\steamapps\common\Just Cause 4/$(ProjectName).dll"
+Exit 0</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DebugRenderer.h" />
+    <ClInclude Include="dllmain.h" />
+    <ClInclude Include="GlobalVariables.h" />
+    <ClInclude Include="InGameChat.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="NetworkIncludes.h" />
+    <ClInclude Include="NetworkManager.h" />
+    <ClInclude Include="NetworkSettings.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="Clock.h" />
+    <ClInclude Include="Device.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Patches.h" />
+    <ClInclude Include="RenderEngine.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="xinput9_1_0.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InGameChat.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="NetworkManager.cpp" />
+    <ClCompile Include="NetworkSettings.cpp" />
+    <ClCompile Include="Offsets.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Patches.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xinput9_1_0.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../DependantProjects/fw1.vcxproj">
+      <Project>{5374880B-BF7D-887C-48F9-9E7CB401947C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="../DependantProjects/meow-hook.vcxproj">
+      <Project>{5B1C913A-C786-45B1-10C5-F6567C6E2306}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
